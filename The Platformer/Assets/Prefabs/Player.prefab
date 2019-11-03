@@ -127,7 +127,7 @@ MonoBehaviour:
   groundTarget: {fileID: 0}
   maximumVelocity: {x: 10, y: 15}
   jumpSound: {fileID: 1921850776911173334}
-  itemSound: {fileID: 1921850776911173334}
+  itemSound: {fileID: 2457396868312648398}
 --- !u!70 &6041442169940903257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -141,8 +141,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2543726, y: -0.025437355}
-  m_Size: {x: 2.5435252, y: 4.782011}
+  m_Offset: {x: -0.12910748, y: -0.012478352}
+  m_Size: {x: 1.1526551, y: 2.371745}
   m_Direction: 0
 --- !u!50 &7835575837531397781
 Rigidbody2D:
@@ -164,7 +164,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1921850776911173334
 AudioSource:
   m_ObjectHideFlags: 0

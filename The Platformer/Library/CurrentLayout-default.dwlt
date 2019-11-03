@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 494}
   m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
-  controlID: 120
+  controlID: 33
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,13 +137,13 @@ MonoBehaviour:
     height: 731
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 15}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 77
+  controlID: 78
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,7 +278,6 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -1336767530577934258, guid: 7bd64d74e4ace064fa1fcf5a2a4791c9, type: 2}
     - {fileID: 1404069037576230023, guid: df0894c79161a024cbe210e5d7bfad19, type: 2}
-    - {fileID: -7047919973047981671, guid: 4694a9b95e154134fa60a3453d271a92, type: 2}
     - {fileID: 5291131207714567608, guid: 78907ba0971c9da44b4f267bf0aa00a1, type: 2}
     - {fileID: -6963058760403284718, guid: a7e8a5c2c3dd806429d0484419597a78, type: 2}
     - {fileID: 3500180534731198317, guid: 0dbe6cfbe0d3e64489b76d19c10ed347, type: 2}
@@ -299,14 +298,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.5231579
       e01: 0
       e02: 0
-      e03: 0
+      e03: -11.157898
       e10: 0
-      e11: 1
+      e11: 0.5231579
       e12: 0
-      e13: 0
+      e13: 252.17896
       e20: 0
       e21: 0
       e22: 1
@@ -347,30 +346,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.558427
       e01: 0
       e02: 0
-      e03: 0
+      e03: -12.921356
       e10: 0
-      e11: 1
+      e11: 0.558427
       e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.7939063
-      e01: 0
-      e02: 0
-      e03: -95.30862
-      e10: 0
-      e11: 0.7939063
-      e12: 0
-      e13: 248.56271
+      e13: 268.69662
       e20: 0
       e21: 0
       e22: 1
@@ -380,10 +363,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 0dbe6cfbe0d3e64489b76d19c10ed347,
+  m_AnimatorController: {fileID: 9100000, guid: df0894c79161a024cbe210e5d7bfad19,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 3500180534731198317, guid: 0dbe6cfbe0d3e64489b76d19c10ed347,
+  - m_Target: {fileID: 1404069037576230023, guid: df0894c79161a024cbe210e5d7bfad19,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -503,20 +486,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/_Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/_Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Geerththan\Documents\GitHUB\The Platformer\The Platformer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5e2f0000
-    m_LastClickedID: 12126
-    m_ExpandedIDs: 000000003c2d0000
+    m_SelectedIDs: fe2e0000
+    m_LastClickedID: 12030
+    m_ExpandedIDs: 000000003a2d00006e2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,7 +527,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003c2d0000
+    m_ExpandedIDs: 000000003a2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -572,21 +555,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c6230000bc300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: EnemyState
+      m_OriginalName: EnemyState
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 13328
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -649,7 +632,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -717,9 +700,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0, y: 0, z: -10}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0, y: 0, z: -10}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -752,9 +735,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.927274
+    m_Target: 22
     speed: 2
-    m_Value: 6.927274
+    m_Value: 22
   m_Ortho:
     m_Target: 1
     speed: 2
