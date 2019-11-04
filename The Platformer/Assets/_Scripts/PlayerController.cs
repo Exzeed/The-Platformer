@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Util;
 /// <summary>
-/// 
+/// Source File: PlayerController.cs
+/// Author: Geerthan Kanthasamy
+/// This program allows the player to control the Player GameObject's movements (and jump)
+/// also contains logic for when colliding with an object tagged as "Crystal"
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
     public PlayerState playerState;
+    public Transform activeSpawnpoint;
+    public GameController gameController;
 
     [Header("Object Properties")]
     public Animator playerAnimator;
@@ -23,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Sounds")]
     public AudioSource jumpSound;
-    public AudioSource itemSound;
+    public AudioSource crystalSound;
 
     // Start is called before the first frame update
     void Start()
@@ -97,11 +102,20 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Item"))
+        if (other.gameObject.CompareTag("Crystal"))
         {
-            // update the scoreboard - add points
-            itemSound.Play();
+            gameController.Score += 100;
+            crystalSound.Play();
             Destroy(other.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            gameController.Lives -= 1;
+            this.gameObject.transform.position = activeSpawnpoint.position;
         }
     }
 }

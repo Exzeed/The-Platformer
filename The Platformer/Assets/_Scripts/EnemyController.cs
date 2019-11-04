@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Util;
 /// <summary>
-/// 
+/// Source File: EnemyController.cs
+/// Author: Geerthan Kanthasamy
+/// This program allows the enemy to move
+/// also contains logic for when in close proximity with a wall or edge
 /// </summary>
 public class EnemyController : MonoBehaviour
 {
@@ -60,7 +63,7 @@ public class EnemyController : MonoBehaviour
 
             if (!hasGroundAhead || hasWallAhead)
             {
-                transform.localScale = new Vector3(-transform.localScale.x, 1.0f, 1.0f);
+                transform.localScale = new Vector3(-transform.localScale.x, 2.0f, 1.0f);
                 isFacingRight = !isFacingRight;
             }
         }
