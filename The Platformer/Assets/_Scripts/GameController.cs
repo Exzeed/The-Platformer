@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
 
     public Text livesLabel;
     public Text scoreLabel;
+    public Text endLabel;
 
     // PUBLIC PROPERTIES
     public int Lives
